@@ -1,17 +1,74 @@
-# 1. Contexte
+# 1. Contexte :
+Le projet concerne le département des Deux-Sèvres, où la Direction Départementale des Territoires (DDT) doit suivre l’évolution de la population, du parc de logements et des dynamiques territoriales.
+Les enjeux liés à l’habitat sont importants : pression foncière, vacance, attractivité des communes, besoins en construction ou en rénovation.
+Pour éclairer les décisions publiques, les services ont besoin d’un système d’information structuré, capable de fournir des indicateurs fiables et des analyses territoriales reproductibles.
 
 # 2. Présentation de la DDT
+La Direction Départementale des Territoires intervient dans les domaines de l’aménagement du territoire, de l’urbanisme, de l’habitat, de l’environnement, de l’agriculture et de la gestion de l’eau.
+L’unité Prospective / Habitat structure les données, produit des analyses territoriales et fournit des outils d’aide à la décision aux services opérationnels.
+L’observatoire de l’habitat s’inscrit dans cette mission de centralisation et d’analyse des données territoriales.
 
 # 3. Problématique
+Comment concevoir un système d’information permettant d’analyser l’habitat dans les Deux-Sèvres afin d’aider les services de la DDT dans leurs décisions ?
+
+Sous-questions :
+• Comment suivre l’évolution du parc de logements par commune ?
+• Comment repérer les zones où la vacance est élevée ?
+• Comment identifier les communes prioritaires pour l’action publique ?
 
 # 4. Objectifs du projet
+• Produire des indicateurs fiables sur l’habitat et la population.
+• Permettre des analyses territoriales à différentes échelles.
+• Aider à la priorisation des actions (construction, rénovation, lutte contre la vacance).
+• Mettre en place un système d’information reproductible basé sur PostgreSQL/PostGIS et R.
+• Structurer les données pour qu’elles soient réutilisables par les services.
 
 # 5. Utilisateurs
+• Responsable Habitat : suivre le parc de logements, la vacance, les dynamiques communales.
+• Chargé d’études : produire des analyses, des cartes et des rapports.
+• Responsable Urbanisme : croiser habitat, densité, urbanisation.
+• Direction : disposer d’indicateurs synthétiques pour piloter les politiques publiques.
 
 # 6. Questions métier
+• Combien de logements par commune ?
+• Quelle part de résidences principales, secondaires, vacantes ?
+• Quelles communes sont les plus denses ?
+• Quelles communes connaissent une forte croissance démographique ?
+• Où la vacance est-elle la plus importante ?
+• Quelles communes doivent être suivies en priorité ?
 
 # 7. Indicateurs
+Population :
+
+• Population totale
+• Évolution de la population
+• Densité de population
+
+Habitat :
+
+• Nombre total de logements
+• Résidences principales
+• Résidences secondaires
+• Logements vacants
+• Taux de vacance
+
+Dynamiques territoriales :
+
+• Évolution du parc de logements
+• Croissance ou déclin des communes
 
 # 8. Jeux de données retenus
+• INSEE : population, logements, typologie des logements.
+• IGN Admin Express : géométrie des communes, limites administratives, codes INSEE.
+
+Pour la première version du projet, INSEE + IGN suffisent pour construire un observatoire robuste. D’autres sources (DVF, BAN) pourront être ajoutées plus tard.
 
 # 9. Livrables attendus
+• Base PostgreSQL/PostGIS structurée.
+• Modèle de données documenté (schémas, dictionnaire).
+• Scripts SQL pour la création et l’alimentation des tables.
+• Scripts R pour les analyses et visualisations.
+• Cartes et graphiques.
+• Tableaux de bord / rapports d’analyse.
+• Documentation technique dans docs/.
+• Dépôt GitHub complet et structuré.
