@@ -69,6 +69,5 @@ CREATE TABLE logements (
     FOREIGN KEY (code_insee) REFERENCES communes(code_insee)
 );
 
--- code SQL ici
 ```
 
