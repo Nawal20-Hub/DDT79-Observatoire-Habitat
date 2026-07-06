@@ -1,0 +1,60 @@
+---
+title: "Observatoire Habitat — Analyse Population"
+author: "DDT79"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+# Introduction
+Ce rapport présente les indicateurs, tableaux et graphiques relatifs à la population communale.
+
+# Indicateurs clés
+```{r}
+read.csv("C:/Users/HP/Desktop/DDT79-Observatoire-Habitat/DDT79-Observatoire-Habitat/DDT79-Observatoire-Habitat/outputs/indicateurs/indicateurs_population.csv")
+
+```
+# Top 10 des communes les plus peuplées
+read.csv("C:/Users/HP/Desktop/DDT79-Observatoire-Habitat/DDT79-Observatoire-Habitat/DDT79-Observatoire-Habitat/outputs/indicateurs/top10_population.csv")
+
+# Bottom 10 des communes les moins peuplées
+read.csv("C:/Users/HP/Desktop/DDT79-Observatoire-Habitat/DDT79-Observatoire-Habitat/DDT79-Observatoire-Habitat/outputs/indicateurs/bottom10_population.csv")
+
+# Classes de population
+read.csv("C:/Users/HP/Desktop/DDT79-Observatoire-Habitat/DDT79-Observatoire-Habitat/DDT79-Observatoire-Habitat/outputs/indicateurs/population_classes.csv")
+
+# Graphiques
+
+Histogramme population municipale :
+
+```{r echo=FALSE}
+knitr::include_graphics("C:/Users/HP/Desktop/DDT79-Observatoire-Habitat/DDT79-Observatoire-Habitat/DDT79-Observatoire-Habitat/outputs/graphiques/hist_population_mun.png")
+```
+
+
+Histogramme population totale :
+
+```{r echo=FALSE}
+knitr::include_graphics("C:/Users/HP/Desktop/DDT79-Observatoire-Habitat/DDT79-Observatoire-Habitat/DDT79-Observatoire-Habitat/outputs/graphiques/hist_population_tot.png")
+```
+
+
+Top 10 population :
+```{r echo=FALSE}
+knitr::include_graphics("C:/Users/HP/Desktop/DDT79-Observatoire-Habitat/DDT79-Observatoire-Habitat/DDT79-Observatoire-Habitat/outputs/graphiques/top10_population.png")
+```
+
+
+Scatter population :
+
+```{r echo=FALSE}
+knitr::include_graphics("C:/Users/HP/Desktop/DDT79-Observatoire-Habitat/DDT79-Observatoire-Habitat/DDT79-Observatoire-Habitat/outputs/graphiques/scatter_population.png")
+```
+
+
+# Conclusion
+
+Les indicateurs montrent une forte concentration de communes dans les classes de population les plus faibles (0–500 habitants).
+Les graphiques confirment une distribution très asymétrique, avec quelques communes très peuplées qui tirent la moyenne vers le haut.
+Ces résultats seront intégrés dans le rapport final Observatoire Habitat.
+
+
