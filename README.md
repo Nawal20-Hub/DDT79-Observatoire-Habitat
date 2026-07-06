@@ -5,7 +5,6 @@ Projet personnel réalisé dans le cadre de ma candidature à une alternance Dat
 ## Technologies
 
 - PostgreSQL
-- PostGIS
 - SQL
 - R
 - Git
