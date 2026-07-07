@@ -1,15 +1,20 @@
-# Observatoire de l'Habitat des Deux-Sèvres
+# Observatoire Habitat — Analyse territoriale et indicateurs population
 
-Projet personnel réalisé dans le cadre de ma candidature à une alternance Data Analyst à la Direction Départementale des Territoires (DDT).
+Développé par **Nawal EL HAMDAOUI**, élève‑ingénieure à l’ENSAR (spécialité Science de la donnée).
 
-## Technologies
+## 📌 Présentation
+Ce projet vise à construire un **observatoire habitat départemental** à partir des données **INSEE**, afin de produire des **indicateurs population**, des **visualisations** et des **supports décisionnels** pour l’analyse territoriale.
 
-- PostgreSQL
-- PostGIS
-- SQL
-- R
-- Git
+## 🎯 Objectifs
+- Structurer un pipeline **R + SQL** pour l’exploitation de données territoriales.
+- Générer des **indicateurs population** (top/bottom 10, classes, densité).
+- Produire des **graphes** (histogrammes, scatter plots, top 10).
+- Documenter les étapes du projet pour assurer **traçabilité** et **reproductibilité**.
 
-## Objectif
+## 🛠️ Stack technique
+- **R** (dplyr, ggplot2)
+- **SQL**
+- **RMarkdown**
+- **Git / GitHub**
+- Données **INSEE**
 
-Concevoir un système d'information territorial permettant d'analyser les données relatives à l'habitat dans les Deux-Sèvres à partir de données publiques.
